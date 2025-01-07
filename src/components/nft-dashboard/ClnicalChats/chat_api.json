@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "sender": "receiver",
+        "message": "Not right now, but thanks for asking.",
+        "time": "2025-01-07 12:05:47"
+    },
+    {
+        "id": 2,
+        "sender": "sender",
+        "message": "Sure, how about tomorrow?",
+        "time": "2025-01-07 12:18:47"
+    },
+    {
+        "id": 3,
+        "sender": "receiver",
+        "message": "I'm good, thank you!",
+        "time": "2025-01-07 11:30:47"
+    },
+    {
+        "id": 4,
+        "sender": "receiver",
+        "message": "Yeah, it's coming along well.",
+        "time": "2025-01-07 11:49:47"
+    },
+    {
+        "id": 5,
+        "sender": "sender",
+        "message": "Let's catch up soon.",
+        "time": "2025-01-07 12:15:47"
+    },
+    {
+        "id": 6,
+        "sender": "sender",
+        "message": "Yeah, it's coming along well.",
+        "time": "2025-01-07 11:56:47"
+    },
+    {
+        "id": 7,
+        "sender": "receiver",
+        "message": "Not right now, but thanks for asking.",
+        "time": "2025-01-07 11:27:47"
+    },
+    {
+        "id": 8,
+        "sender": "sender",
+        "message": "Sure, how about tomorrow?",
+        "time": "2025-01-07 11:35:47"
+    },
+    {
+        "id": 9,
+        "sender": "receiver",
+        "message": "I'm good, thank you!",
+        "time": "2025-01-07 12:15:47"
+    },
+    {
+        "id": 10,
+        "sender": "sender",
+        "message": "I'm good, thank you!",
+        "time": "2025-01-07 11:55:47"
+    },
+    {
+        "id": 11,
+        "sender": "receiver",
+        "message": "Not right now, but thanks for asking.",
+        "time": "2025-01-07 11:28:47"
+    },
+    {
+        "id": 12,
+        "sender": "sender",
+        "message": "Do you need any help?",
+        "time": "2025-01-07 11:39:47"
+    },
+    {
+        "id": 13,
+        "sender": "sender",
+        "message": "Yeah, it's coming along well.",
+        "time": "2025-01-07 12:12:47"
+    },
+    {
+        "id": 14,
+        "sender": "receiver",
+        "message": "Yeah, it's coming along well.",
+        "time": "2025-01-07 11:49:47"
+    },
+    {
+        "id": 15,
+        "sender": "sender",
+        "message": "Sounds great!",
+        "time": "2025-01-07 11:31:47"
+    },
+    {
+        "id": 16,
+        "sender": "sender",
+        "message": "What are you up to?",
+        "time": "2025-01-07 11:38:47"
+    },
+    {
+        "id": 17,
+        "sender": "receiver",
+        "message": "Yeah, it's coming along well.",
+        "time": "2025-01-07 11:25:47"
+    },
+    {
+        "id": 18,
+        "sender": "receiver",
+        "message": "Let's catch up soon.",
+        "time": "2025-01-07 12:13:47"
+    },
+    {
+        "id": 19,
+        "sender": "sender",
+        "message": "Do you need any help?",
+        "time": "2025-01-07 11:37:47"
+    },
+    {
+        "id": 20,
+        "sender": "receiver",
+        "message": "Let's catch up soon.",
+        "time": "2025-01-07 11:42:47"
+    }
+]

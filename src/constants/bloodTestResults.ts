@@ -49,7 +49,7 @@ export const results: BloodTestResult[] = [
         flag = 2;
       }
     }
-    return { ...rest, result, min, max, flag };
+    return { ...rest, min, max, flag };
   });
 
 export const flags = [

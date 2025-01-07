@@ -1,6 +1,16 @@
 import styled from 'styled-components';
 import { LAYOUT, media } from '@app/styles/themes/constants';
 import { BaseCol } from '@app/components/common/BaseCol/BaseCol';
+import { FONT_SIZE } from '@app/styles/themes/constants';
+import { BaseTypography } from '@app/components/common/BaseTypography/BaseTypography';
+
+export const TitleText = styled(BaseTypography.Title)`
+  &.ant-typography {
+    margin-bottom: 1.25rem;
+
+    font-size: ${FONT_SIZE.xs};
+  }
+`;
 
 export const RightSideCol = styled(BaseCol)`
   padding: ${LAYOUT.desktop.paddingVertical} ${LAYOUT.desktop.paddingHorizontal};

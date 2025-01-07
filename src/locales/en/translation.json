@@ -234,6 +234,26 @@
     "zipcode": "Zipcode",
     "delete": "Delete"
   },
+  "dadh": {
+    "send": "Send",
+    "clinicalChats": "Clinical Chats",
+    "notifications":"Notifications",
+    "sideMenu": {
+      "home": "Home",
+      "inbox": "Inbox",
+      "consultHistory": "Consultation History",
+      "billing": "Billing",
+      "support": "Support",
+      "myAccount": "My Account",
+      "logout": "Logout",
+      "dashboard": "Dashboard",
+      "medical": "Medizin",
+      "newsFeed": "Nachrichten",
+      "profile": "Profil",
+      "notification":"Notification"
+
+    }
+  },
   "medical-dashboard": {
     "activity": {
       "kcalBurned": "kcal burned on",

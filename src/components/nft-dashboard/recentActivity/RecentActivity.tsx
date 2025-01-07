@@ -40,20 +40,8 @@ export const RecentActivity: React.FC = () => {
   }, [filters.status, activity]);
 
   return (
-    <BaseRow gutter={[30, 0]}>
-      <BaseCol span={24}>
-        <RecentActivityHeader filters={filters} setFilters={setFilters} />
-      </BaseCol>
-
-      <BaseCol xs={24} sm={24} md={24} xl={16}>
-        <RecentActivityFeed activity={filteredActivity} hasMore={hasMore} next={next} />
-      </BaseCol>
-
-      {isDesktop && (
-        <S.FilterCol span={8}>
-          <RecentActivityFilter filters={filters} setFilters={setFilters} withWrapper />
-        </S.FilterCol>
-      )}
-    </BaseRow>
+    <BaseCol gutter={[30, 0]}>
+      <RecentActivityFeed activity={filteredActivity} hasMore={hasMore} next={next} />
+    </BaseCol>
   );
 };

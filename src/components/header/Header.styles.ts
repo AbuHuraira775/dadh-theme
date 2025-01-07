@@ -4,6 +4,16 @@ import { GitHubButton } from '@app/components/header/components/GithubButton/Git
 import { LAYOUT, media } from '@app/styles/themes/constants';
 import { BaseCollapse } from '../common/BaseCollapse/BaseCollapse';
 import { BaseCol } from '../common/BaseCol/BaseCol';
+import { FONT_SIZE } from '@app/styles/themes/constants';
+import { BaseTypography } from '@app/components/common/BaseTypography/BaseTypography';
+
+export const TitleText = styled(BaseTypography.Title)`
+  &.ant-typography {
+    margin-bottom: 1.25rem;
+
+    font-size: ${FONT_SIZE.xs};
+  }
+`;
 
 export const HeaderActionWrapper = styled.div`
   cursor: pointer;

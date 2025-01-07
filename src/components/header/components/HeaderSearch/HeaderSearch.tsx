@@ -46,9 +46,9 @@ export const HeaderSearch: React.FC = () => {
         <>
           <BaseButton
             type={isModalOpen ? 'ghost' : 'text'}
-            icon={<S.SearchIcon onClick={() => setModalOpen(true)} />}
+            // icon={<S.SearchIcon onClick={() => setModalOpen(true)} />}
           />
-          <S.SearchModal
+          {/* <S.SearchModal
             open={isModalOpen}
             closable={false}
             footer={null}
@@ -62,7 +62,7 @@ export const HeaderSearch: React.FC = () => {
               isOverlayOpen={isOverlayOpen}
               setOverlayOpen={setOverlayOpen}
             />
-          </S.SearchModal>
+          </S.SearchModal> */}
         </>
       )}
 

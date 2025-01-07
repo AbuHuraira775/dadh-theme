@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PageTitle } from '@app/components/common/PageTitle/PageTitle';
 import { References } from '@app/components/common/References/References';
 import { useResponsive } from '@app/hooks/useResponsive';
@@ -12,26 +12,23 @@ import { RecentActivity } from '@app/components/nft-dashboard/recentActivity/Rec
 import * as S from './DashboardPage.styles';
 import { BaseRow } from '@app/components/common/BaseRow/BaseRow';
 import { BaseCol } from '@app/components/common/BaseCol/BaseCol';
+import { DesktopHeader } from '@app/components/header/layouts/DesktopHeader';
+import { ThemePicker } from '@app/components/header/components/settingsDropdown/settingsOverlay/ThemePicker/ThemePicker';
+import { NotificationsDropdown } from '@app/components/header/components/notificationsDropdown/NotificationsDropdown';
+import { NotificationsOverlay } from '@app/components/header/components/notificationsDropdown/NotificationsOverlay/NotificationsOverlay';
+import { notifications as fetchedNotifications, Notification } from '@app/api/notifications.api';
+import ChatUI from '@app/components/nft-dashboard/ClnicalChats/ClinicalChats';
+import { useTranslation } from 'react-i18next';
 
 const MedicalDashboardPage: React.FC = () => {
+  const { t } = useTranslation();
+
   const { isDesktop } = useResponsive();
 
   const desktopLayout = (
     <BaseRow>
       <S.LeftSideCol xl={16} xxl={17} id="desktop-content">
         <BaseRow gutter={[60, 60]}>
-          <BaseCol span={24}>
-            <TrendingCreators />
-          </BaseCol>
-
-          <BaseCol span={24}>
-            <RecentlyAddedNft />
-          </BaseCol>
-
-          <BaseCol span={24}>
-            <TrendingCollections />
-          </BaseCol>
-
           <BaseCol span={24}>
             <RecentActivity />
           </BaseCol>
@@ -40,17 +37,7 @@ const MedicalDashboardPage: React.FC = () => {
       </S.LeftSideCol>
 
       <S.RightSideCol xl={8} xxl={7}>
-        <div id="balance">
-          <Balance />
-        </div>
-        <S.Space />
-        <div id="total-earning">
-          <TotalEarning />
-        </div>
-        <S.Space />
-        <S.ScrollWrapper id="activity-story">
-          <ActivityStory />
-        </S.ScrollWrapper>
+        <ChatUI />
       </S.RightSideCol>
     </BaseRow>
   );
