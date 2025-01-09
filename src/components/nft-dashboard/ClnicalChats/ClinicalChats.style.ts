@@ -85,4 +85,50 @@ export const ReplyBox = styled.div`
   margin: 0 !important;
   height: 100%;
   border-left: 1px solid rgba(0, 0, 0, 0.08);
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+`;
+
+export const ReplyContainer = styled.div`
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding: 2px 5px;
+  background-color: #f1f1f1;
+  border-radius: 25px; 
+`;
+
+export const ReplyMain = styled.div`
+  flex: 70% 30%;
+  textarea {
+    height: 100%;
+    width: 100%;
+    padding: 0 3px;
+    color: #333; 
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+  }
+`;
+export const ReplySend = styled.div`
+  flex: 0 0 auto;
+  padding: 0;
+  button {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff; /* Blue send button */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+  }
 `;

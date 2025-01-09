@@ -8,6 +8,10 @@ import { BaseSelect } from '@app/components/common/selects/BaseSelect/BaseSelect
 import { useTranslation } from 'react-i18next';
 import { NFTCardHeader } from '@app/components/nft-dashboard/common/NFTCardHeader/NFTCardHeader';
 import { ThemePicker } from '../components/settingsDropdown/settingsOverlay/ThemePicker/ThemePicker';
+import { HeaderFullscreen } from '../components/HeaderFullscreen/HeaderFullscreen';
+import { NotificationsDropdown } from '../components/notificationsDropdown/NotificationsDropdown';
+import { SettingsDropdown } from '../components/settingsDropdown/SettingsDropdown';
+import { ProfileDropdown } from '../components/profileDropdown/ProfileDropdown/ProfileDropdown';
 
 interface DesktopHeaderProps {
   isTwoColumnsLayout: boolean;
@@ -35,15 +39,23 @@ export const DesktopHeader: React.FC<DesktopHeaderProps> = ({ isTwoColumnsLayout
   return (
     <BaseRow justify="space-between" align="middle">
       {leftSide}
+
       <S.ProfileColumn xl={8} xxl={7} $isTwoColumnsLayout={isTwoColumnsLayout}>
-        <BaseRow align="middle" justify="space-between" gutter={[{ xxl: 5 }, { xxl: 5 }]}>
-          <BaseCol xl={15} xxl={7}>
-            <HeaderSearch />
-          </BaseCol>
-          <BaseCol>
-            <ThemePicker />
-          </BaseCol>
-        </BaseRow>
+        <BaseCol span={24}>
+          <BaseRow align="middle" justify="space-between" gutter={[5, 5]}>
+            <BaseCol span={16}>
+              <HeaderSearch />
+            </BaseCol>
+
+            <BaseCol>
+              <ThemePicker />
+            </BaseCol>
+          </BaseRow>
+
+          <BaseRow gutter={[5, 5]}>
+            <h1>Clinical Chats</h1>
+          </BaseRow>
+        </BaseCol>
       </S.ProfileColumn>
     </BaseRow>
   );

@@ -14,7 +14,10 @@ export const TitleText = styled(BaseTypography.Title)`
     font-size: ${FONT_SIZE.xs};
   }
 `;
-
+export const Text = styled(BaseTypography.Text)`
+  display: block;
+  text-align: center;
+`;
 export const HeaderActionWrapper = styled.div`
   cursor: pointer;
 
@@ -79,11 +82,11 @@ interface ProfileColumn {
   $isTwoColumnsLayout: boolean;
 }
 
-export const ProfileColumn = styled(BaseCol)<ProfileColumn>`
+export const ProfileColumn = styled(BaseCol) <ProfileColumn>`
   @media only screen and ${media.md} {
     ${(props) =>
-      props?.$isTwoColumnsLayout &&
-      css`
+    props?.$isTwoColumnsLayout &&
+    css`
         background-color: var(--sider-background-color);
         padding: ${LAYOUT.desktop.paddingVertical} ${LAYOUT.desktop.paddingHorizontal};
       `}

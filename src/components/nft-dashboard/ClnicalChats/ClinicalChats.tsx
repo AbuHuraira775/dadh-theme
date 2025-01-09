@@ -33,15 +33,6 @@ const ChatUI = () => {
             )}
           </MessageBody>
         ))}
-
-        <ReplyBox>
-          <BaseRow>
-            <BaseCol>
-              <BaseInput />
-            </BaseCol>
-            <BaseCol></BaseCol>
-          </BaseRow>
-        </ReplyBox>
       </Conversation>
     </App>
   );

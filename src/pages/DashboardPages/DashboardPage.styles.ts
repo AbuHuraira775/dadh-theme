@@ -3,12 +3,23 @@ import { LAYOUT, media } from '@app/styles/themes/constants';
 import { BaseCol } from '@app/components/common/BaseCol/BaseCol';
 import { FONT_SIZE } from '@app/styles/themes/constants';
 import { BaseTypography } from '@app/components/common/BaseTypography/BaseTypography';
+import { BaseLayout } from '@app/components/common/BaseLayout/BaseLayout';
 
 export const TitleText = styled(BaseTypography.Title)`
   &.ant-typography {
     margin-bottom: 1.25rem;
 
     font-size: ${FONT_SIZE.xs};
+  }
+`;
+
+export const LayoutMain = styled(BaseLayout)`
+  @media only screen and ${media.md} {
+    margin-left: 80px;
+  }
+
+  @media only screen and ${media.xl} {
+    margin-left: unset;
   }
 `;
 

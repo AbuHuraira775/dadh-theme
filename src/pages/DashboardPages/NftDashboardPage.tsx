@@ -19,6 +19,8 @@ import { NotificationsOverlay } from '@app/components/header/components/notifica
 import { notifications as fetchedNotifications, Notification } from '@app/api/notifications.api';
 import ChatUI from '@app/components/nft-dashboard/ClnicalChats/ClinicalChats';
 import { useTranslation } from 'react-i18next';
+import MainContent from '@app/components/layouts/main/MainContent/MainContent';
+import ReplyBox from '@app/components/nft-dashboard/ClnicalChats/ReplyBox';
 
 const MedicalDashboardPage: React.FC = () => {
   const { t } = useTranslation();
@@ -37,7 +39,20 @@ const MedicalDashboardPage: React.FC = () => {
       </S.LeftSideCol>
 
       <S.RightSideCol xl={8} xxl={7}>
-        <ChatUI />
+        {/* <BaseRow gutter={[60, 60]}>
+          <BaseCol span={24}>
+            <ChatUI />
+          </BaseCol>
+        </BaseRow> */}
+
+        <BaseRow gutter={[60, 60]}>
+          <BaseCol span={24}>
+            <ChatUI />
+          </BaseCol>
+          <BaseCol span={24}>
+            <ReplyBox />
+          </BaseCol>
+        </BaseRow>
       </S.RightSideCol>
     </BaseRow>
   );
